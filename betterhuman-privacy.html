@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BetterHuman — Privacy Policy</title>
+<style>
+  :root {
+    --ink: #1a2b2e;
+    --ink-soft: #47565a;
+    --line: #dfe4e2;
+    --bg: #fbfcfb;
+    --accent: #2f6f6a;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--ink-soft); font-size: 15px; margin: 0; }
+  .promise {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 28px 0;
+    font-size: 18px;
+  }
+  .promise strong { color: var(--accent); }
+  h2 {
+    font-size: 21px;
+    margin: 40px 0 10px;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 7px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--ink-soft); }
+  code {
+    background: #eef2f1;
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8edec; --ink-soft: #9fb0ae; --line: #2a3a3c;
+      --bg: #10191a; --accent: #6cc3bc; --card: #16211f;
+    }
+    code { background: #1c2a29; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="sub">BetterHuman &middot; Last updated 3 September 2026</p>
+  </header>
+
+  <div class="promise">
+    <strong>The short version:</strong> Your health data stays on your iPhone. BetterHuman does not have servers that store it, and we cannot see it. The only place it goes is Apple Health, which is already on your device.
+  </div>
+
+  <p>BetterHuman helps you see how your daily habits line up with what your body is doing &mdash; your sleep, recovery, and activity. To do that, the app reads health data from Apple Health on your device. This page explains, in plain terms, what the app touches and what it does not.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Everything about your health and habits is stored locally on your iPhone and, where relevant, read from Apple Health. This includes:</p>
+  <ul>
+    <li>Health data you allow us to read (for example sleep, heart rate, heart rate variability, steps, and workouts).</li>
+    <li>The habits you create and your daily check-ins.</li>
+    <li>Your scores, insights, and any patterns the app finds.</li>
+  </ul>
+  <p>None of this is uploaded to us. BetterHuman has no account system and no cloud database for your health information. We never see your sleep scores, your recovery numbers, your habit names, or any Apple Health value.</p>
+
+  <h2>Apple Health (HealthKit)</h2>
+  <p>The app asks your permission before reading anything from Apple Health, and it only reads the specific data types you approve. You can review or change this at any time in the iOS <span class="muted">Settings &rarr; Health &rarr; Data Access &amp; Devices</span> screen. Data read from Apple Health is used only inside the app, on your device, to calculate your scores and insights. It is never sent to us, and never used for advertising.</p>
+
+  <h2>Workout maps</h2>
+  <p>There is one exception to &ldquo;stays on your device,&rdquo; and it works the same way as any maps app on your iPhone. If you view an outdoor workout that has a GPS route, the app draws a map of that route. To do this, your route&rsquo;s location is sent to <strong>Apple Maps</strong> so it can return the map image and a place name (for example, the name of the park you ran in). This goes only to Apple, under Apple&rsquo;s own privacy terms &mdash; never to us, and never to any advertiser. No other health data leaves your device this way: your sleep, heart rate, recovery, and scores are never sent anywhere.</p>
+
+  <h2>Anonymous usage analytics</h2>
+  <p>To understand whether the app works &mdash; whether people finish setup, whether features get used, whether anything crashes &mdash; BetterHuman uses a privacy-focused analytics tool called <strong>TelemetryDeck</strong>. It is built to collect no personal information by design.</p>
+  <p>What TelemetryDeck receives is limited to anonymous product-usage signals, such as:</p>
+  <ul>
+    <li>That an app screen or tab was opened (which one, not what was on it).</li>
+    <li>That a step of setup was reached or completed.</li>
+    <li>Whether a permission prompt was granted, denied, or skipped &mdash; a yes/no/skipped, never the data behind it.</li>
+    <li>That a habit was created or completed &mdash; the fact it happened, in broad buckets, never the habit&rsquo;s name.</li>
+    <li>Anonymous session counts and crash reports.</li>
+  </ul>
+  <p><strong>What analytics never receives:</strong> no Apple Health value, no sleep or recovery score, no heart-rate number, no habit name, and nothing that identifies you personally. Only rough buckets and simple yes/no signals leave the device, and they cannot be traced back to you. TelemetryDeck does not track you across other apps or websites.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>We do not sell your data. To anyone. Ever.</li>
+    <li>We do not use your health data for advertising.</li>
+    <li>We do not build a personal profile of you on our servers &mdash; there is no such server.</li>
+    <li>We do not track you across other apps or websites.</li>
+  </ul>
+
+  <h2>Data you can remove</h2>
+  <p>Because your data lives on your device, deleting the app removes the habits, check-ins, scores, and insights stored by BetterHuman. Data held by Apple Health is controlled by you in the Health app and is not deleted by removing BetterHuman. You can revoke the app&rsquo;s access to any Apple Health data type at any time in iOS Settings.</p>
+
+  <h2>Children</h2>
+  <p>BetterHuman is not directed to children under 13, and we do not knowingly collect information from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the &ldquo;last updated&rdquo; date at the top will change with it. During the current TestFlight testing period, this policy may be revised as features are added.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy or this policy? Email <a href="mailto:vasko_andreev@yahoo.com">vasko_andreev@yahoo.com</a>.</p>
+
+  <footer>
+    BetterHuman &middot; Build better habits, one day at a time.<br>
+    This app is currently in beta testing via Apple TestFlight.
+  </footer>
+
+</div>
+</body>
+</html>
