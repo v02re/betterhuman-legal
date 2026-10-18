@@ -87,11 +87,11 @@
 
   <header>
     <h1>Privacy Policy</h1>
-    <p class="sub">BetterHuman &middot; Last updated 16 September 2026</p>
+    <p class="sub">BetterHuman &middot; Last updated 18 October 2026</p>
   </header>
 
   <div class="promise">
-    <strong>The short version:</strong> Your health data stays on your iPhone. BetterHuman does not have servers that store it, and we cannot see it. The only place it goes is Apple Health, which is already on your device.
+    <strong>The short version:</strong> Your health data stays on your iPhone. BetterHuman does not have servers that store it, and we cannot see it. It leaves your phone only if you choose to send it to us yourself &mdash; and you always see exactly what goes before anything is sent.
   </div>
 
   <p>BetterHuman helps you see how your daily habits line up with what your body is doing &mdash; your sleep, recovery, and activity. To do that, the app reads health data from Apple Health on your device. This page explains, in plain terms, what the app touches and what it does not.</p>
@@ -99,17 +99,24 @@
   <h2>What stays on your device</h2>
   <p>Everything about your health and habits is stored locally on your iPhone and, where relevant, read from Apple Health. This includes:</p>
   <ul>
-    <li>Health data you allow us to read (for example sleep, heart rate, heart rate variability, steps, and workouts).</li>
+    <li>Health data you allow us to read (for example sleep, heart rate, heart rate variability, steps, workouts, and workout effort).</li>
     <li>The habits you create and your daily check-ins.</li>
     <li>Your scores, insights, and any patterns the app finds.</li>
   </ul>
-  <p>None of this is uploaded to us. BetterHuman has no account system and no cloud database for your health information. We never see your sleep scores, your recovery numbers, your habit names, or any Apple Health value.</p>
+  <p>None of this is uploaded to us. BetterHuman has no account system and no cloud database for your health information. We never see your sleep scores, your recovery numbers, your habit names, or any Apple Health value &mdash; unless you choose to email them to us (see <a href="#email">When you email us</a>).</p>
+  <p>Like all app data on your iPhone, this is included in your iPhone&rsquo;s own backup (iCloud or your computer) if you have one turned on. That backup belongs to you and Apple, not to us.</p>
 
   <h2>Apple Health (HealthKit)</h2>
-  <p>The app asks your permission before reading anything from Apple Health, and it only reads the specific data types you approve. You can review or change this at any time in the iOS <span class="muted">Settings &rarr; Health &rarr; Data Access &amp; Devices</span> screen. Data read from Apple Health is used only inside the app, on your device, to calculate your scores and insights. It is never sent to us, and never used for advertising.</p>
+  <p>The app asks your permission before reading anything from Apple Health, and it only reads the specific data types you approve. You can review or change this at any time in the iOS <span class="muted">Settings &rarr; Health &rarr; Data Access &amp; Devices</span> screen. Data read from Apple Health is used only inside the app, on your device, to calculate your scores and insights. It is never sent to us on its own, and never used for advertising.</p>
+  <p><strong>Workout effort.</strong> If you use an Apple Watch, the app can read two workout effort numbers from Apple Health:</p>
+  <ul>
+    <li><strong>Workout Effort Score</strong> &mdash; the 1&ndash;10 effort you give a workout on your Apple Watch or in the Fitness app. We read it to show your own number on that workout.</li>
+    <li><strong>Estimated Workout Effort Score</strong> &mdash; Apple&rsquo;s own 1&ndash;10 estimate. We read it to show a number when you haven&rsquo;t rated that workout.</li>
+  </ul>
+  <p>Both stay on your iPhone. Neither is sent to analytics.</p>
 
   <h2>Workout maps</h2>
-  <p>There is one exception to &ldquo;stays on your device&rdquo; that happens automatically, and it works the same way as any maps app on your iPhone. If you view an outdoor workout that has a GPS route, the app draws a map of that route. To do this, your route&rsquo;s location is sent to <strong>Apple Maps</strong> so it can return the map image and a place name (for example, the name of the park you ran in). This goes only to Apple, under Apple&rsquo;s own privacy terms &mdash; never to us, and never to any advertiser. No other health data leaves your device this way: your sleep, heart rate, recovery, and scores are never sent anywhere.</p>
+  <p>There is one exception to &ldquo;stays on your device&rdquo; that happens automatically, and it works the same way as any maps app on your iPhone. If you view an outdoor workout that has a GPS route, the app draws a map of that route. To do this, your route&rsquo;s location is sent to <strong>Apple Maps</strong> so it can return the map image and a place name (for example, the name of the park you ran in). This goes only to Apple, under Apple&rsquo;s own privacy terms &mdash; never to us, and never to any advertiser. No other health data leaves your device this way: your sleep, heart rate, recovery, and scores are never sent anywhere automatically.</p>
 
   <h2>Anonymous usage analytics</h2>
   <p>To understand whether the app works &mdash; whether people finish setup, whether features get used, whether anything crashes &mdash; BetterHuman uses a privacy-focused analytics tool called <strong>TelemetryDeck</strong>. It is built to collect no personal information by design.</p>
@@ -119,10 +126,21 @@
     <li>That a step of setup was reached or completed.</li>
     <li>Whether a permission prompt was granted, denied, or skipped &mdash; a yes/no/skipped, never the data behind it.</li>
     <li>That a habit was created or completed &mdash; the fact it happened, in broad buckets, never the habit&rsquo;s name.</li>
+    <li>That the app was opened that day, and which kind of notification opened it (for example the morning one or a habit reminder) &mdash; never the notification&rsquo;s text.</li>
+    <li>That a kind of Apple Health data stopped arriving (for example steps) &mdash; the kind only, never an amount or a date.</li>
+    <li>During testing only: your answer to &ldquo;Did Recovery feel right?&rdquo; (too low, right, or too high) &mdash; never the score itself.</li>
     <li>Anonymous session counts and crash reports.</li>
   </ul>
-  BetterHuman also sends anonymous crash, hang and abnormal-exit reports so we can find and fix stability problems. These reports contain only a category (for example "crash — abnormal termination" or "hang — 2 to 5 seconds") and whether it happened on the current app version. They never include your health data, scores, habit names, or any content from your device, and they cannot identify you.
-  <p><strong>What analytics never receives:</strong> no Apple Health value, no sleep or recovery score, no heart-rate number, no habit name, and nothing that identifies you personally. Only rough buckets and simple yes/no signals leave the device, and they cannot be traced back to you. TelemetryDeck does not track you across other apps or websites.</p>
+  <p>BetterHuman also sends anonymous crash, hang and abnormal-exit reports so we can find and fix stability problems. These reports contain only a category (for example &ldquo;crash &mdash; abnormal termination&rdquo; or &ldquo;hang &mdash; 2 to 5 seconds&rdquo;) and whether it happened on the current app version. They never include your health data, scores, habit names, or any content from your device, and they cannot identify you.</p>
+  <p><strong>What analytics never receives:</strong> no Apple Health value, no sleep or recovery score, no heart-rate number, no habit name, and nothing that identifies you personally. Only rough buckets and simple yes/no or fixed-choice signals leave the device, and they cannot be traced back to you. TelemetryDeck does not track you across other apps or websites.</p>
+
+  <h2 id="email">When you email us</h2>
+  <p>Two things in the app open an email to us. Nothing is sent until you tap Send in your Mail app yourself, and your email address shows who sent it.</p>
+  <ul>
+    <li><strong>Send Feedback</strong> (Settings). The email is filled in with the app version, iOS version, iPhone model, how you track (Apple Watch, iPhone or manual), and a few counts and dates &mdash; for example how many habits you have and when setup was finished. No scores, no Apple Health values, no habit names. Everything else is what you type.</li>
+    <li><strong>Help improve Recovery</strong> (testing only, Apple Watch users). In Settings &rarr; Privacy &amp; Data, or after you answer &ldquo;Did Recovery feel right?&rdquo;, you can send us your last 60 nights: your Sleep and Recovery scores, the heart, sleep and training-load numbers behind them, and your morning sleep and energy answers. The file also says the app version, your iPhone model and your time zone. It has no habit names and no name. Tap <strong>See what&rsquo;s inside</strong> to read the whole file before you send it.</li>
+  </ul>
+  <p>Both go only to the BetterHuman developer at <a href="mailto:getbetterhuman@icloud.com">getbetterhuman@icloud.com</a>. Recovery data is used only to make the Recovery score more accurate. Neither is shared or sold. Ask us at any time and we delete what you sent.</p>
 
   <h2>What we do not do</h2>
   <ul>
@@ -137,7 +155,7 @@
   <p>That file describes your health and your daily life, so treat it like any other personal document &mdash; wherever you send it, it is covered by that service&rsquo;s terms, not ours. To bring your data back, tap <strong>Restore from backup</strong> and choose the file. Restoring replaces everything currently in the app.</p>
   
   <h2>Data you can remove</h2>
-  <p>Because your data lives on your device, deleting the app removes the habits, check-ins, scores, and insights stored by BetterHuman. A backup file you saved beforehand is the only way to bring them back. Data held by Apple Health is controlled by you in the Health app and is not deleted by removing BetterHuman. You can revoke the app&rsquo;s access to any Apple Health data type at any time in iOS Settings.</p>
+  <p>Because your data lives on your device, deleting the app removes the habits, check-ins, scores, and insights stored by BetterHuman. A backup file you saved beforehand is the only way to bring them back. Data held by Apple Health is controlled by you in the Health app and is not deleted by removing BetterHuman. You can revoke the app&rsquo;s access to any Apple Health data type at any time in iOS Settings. If you emailed us feedback or Recovery data, write to <a href="mailto:getbetterhuman@icloud.com">getbetterhuman@icloud.com</a> and we delete it.</p>
   
   <h2>Children</h2>
   <p>BetterHuman is not directed to children under 13, and we do not knowingly collect information from them.</p>
